@@ -1,7 +1,7 @@
 # OpenCV_MSVC_17_Lib
 Prebuilt MSVC 17 OpenCV libraries and dlls
 
-# Instruction for MSVC Projects
+# Instruction for MSVS Projects
 - `git clone` this repo to `C:\`
 - Linker -> Input -> Additional Dependencies
 ```
@@ -21,3 +21,10 @@ C:\OpenCV_MSVC_17_Lib\lib\opencv_videoio455.lib
 
 # To static link OpenCV
 C/C++ -> Code Generation -> Runtime Library -> Multi-threaded
+
+# Instructions for Qt MSVC
+In the project file add these lines
+```
+C:\OpenCV_MSVC_17_Lib\lib\Release\*.lib
+C:\OpenCV_MSVC_17_Lib\lib\Debug\*.lib
+```
